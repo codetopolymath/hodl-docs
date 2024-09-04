@@ -1,5 +1,5 @@
-site_name: HODL Project Documentation
-site_description: Comprehensive documentation for the HODL project
+site_name: HODL Project 
+site_description: documentation for the HODL project
 site_author: HODL Team
 
 theme:
@@ -40,6 +40,10 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Getting Started:
+    - Project Overview: getting-started/overview.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
   - Backend:
     - Overview: backend/overview.md
     - Project Structure: backend/project-structure.md
@@ -48,13 +52,21 @@ nav:
       - Akita: backend/models/akita.md
       - Incufi: backend/models/incufi.md
       - Liquidity: backend/models/liquidity.md
+      - Price: backend/models/price.md
+      - NFT: backend/models/nft.md
     - APIs:
       - User: backend/apis/user.md
       - Akita: backend/apis/akita.md
       - Incufi: backend/apis/incufi.md
       - Liquidity: backend/apis/liquidity.md
-    - Management Commands: backend/management-commands.md
-    - Configuration: backend/configuration.md
+    - Management Commands:
+      - Overview: backend/management-commands/overview.md
+      - Distribute Commission: backend/management-commands/distribute-commission.md
+      - Distribute Gift: backend/management-commands/distribute-gift.md
+      - Import NFTs: backend/management-commands/import-nfts.md
+    - Migrations: backend/migrations.md
+    - Signals: backend/signals.md
+    - Admin Interface: backend/admin-interface.md
   - Frontend:
     - Overview: frontend/overview.md
     - Project Structure: frontend/project-structure.md
@@ -64,14 +76,24 @@ nav:
       - Stake: frontend/pages/stake.md
       - Swap: frontend/pages/swap.md
       - Team: frontend/pages/team.md
+      - Bonus: frontend/pages/bonus.md
+      - Complete Profile: frontend/pages/complete-profile.md
+      - Register: frontend/pages/register.md
+      - Projects: frontend/pages/projects.md
+      - Withdraw History: frontend/pages/withdraw-history.md
     - Components:
       - Header: frontend/components/header.md
       - Sidebar: frontend/components/sidebar.md
       - Language Picker: frontend/components/language-picker.md
+      - Navigation: frontend/components/navigation.md
+      - User Profile: frontend/components/user-profile.md
     - Core:
       - Context: frontend/core/context.md
       - Localization: frontend/core/localization.md
       - Utils: frontend/core/utils.md
+    - Styling:
+      - CSS Modules: frontend/styling/css-modules.md
+      - Global Styles: frontend/styling/global-styles.md
   - Blockchain:
     - Overview: blockchain/overview.md
     - Smart Contracts:
@@ -80,17 +102,61 @@ nav:
       - Liquidity: blockchain/contracts/liquidity.md
       - Purchase: blockchain/contracts/purchase.md
       - Swap: blockchain/contracts/swap.md
+    - ABIs:
+      - Overview: blockchain/abis/overview.md
+      - ERC20 Token: blockchain/abis/erc20-token.md
+      - NFT: blockchain/abis/nft.md
+      - Liquidity: blockchain/abis/liquidity.md
+      - Purchase: blockchain/abis/purchase.md
+      - Swap: blockchain/abis/swap.md
     - Transactions: blockchain/transactions.md
-    - Integration: blockchain/integration.md
+    - Integration with Backend: blockchain/backend-integration.md
+    - Integration with Frontend: blockchain/frontend-integration.md
   - Development:
     - Setup: development/setup.md
-    - Backend Development: development/backend.md
-    - Frontend Development: development/frontend.md
-    - Blockchain Development: development/blockchain.md
+    - Backend Development:
+      - Environment Setup: development/backend/environment-setup.md
+      - Adding New Models: development/backend/adding-models.md
+      - Creating APIs: development/backend/creating-apis.md
+      - Writing Management Commands: development/backend/management-commands.md
+      - Testing: development/backend/testing.md
+    - Frontend Development:
+      - Environment Setup: development/frontend/environment-setup.md
+      - Creating New Pages: development/frontend/creating-pages.md
+      - State Management: development/frontend/state-management.md
+      - Styling Components: development/frontend/styling-components.md
+      - Testing: development/frontend/testing.md
+    - Blockchain Development:
+      - Local Blockchain Setup: development/blockchain/local-setup.md
+      - Writing Smart Contracts: development/blockchain/writing-contracts.md
+      - Testing Smart Contracts: development/blockchain/testing-contracts.md
+      - Integrating with Web3: development/blockchain/web3-integration.md
   - Deployment:
-    - Backend Deployment: deployment/backend.md
-    - Frontend Deployment: deployment/frontend.md
-    - Smart Contract Deployment: deployment/smart-contracts.md
+    - Overview: deployment/overview.md
+    - Backend Deployment:
+      - Server Setup: deployment/backend/server-setup.md
+      - Database Configuration: deployment/backend/database-config.md
+      - WSGI Configuration: deployment/backend/wsgi-config.md
+      - Nginx Configuration: deployment/backend/nginx-config.md
+    - Frontend Deployment:
+      - Build Process: deployment/frontend/build-process.md
+      - Hosting Options: deployment/frontend/hosting-options.md
+      - CI/CD Setup: deployment/frontend/ci-cd-setup.md
+    - Smart Contract Deployment:
+      - Testnet Deployment: deployment/blockchain/testnet-deployment.md
+      - Mainnet Deployment: deployment/blockchain/mainnet-deployment.md
+      - Verifying Contracts: deployment/blockchain/contract-verification.md
+  - API Reference:
+    - Backend APIs: api-reference/backend-apis.md
+    - Frontend Components: api-reference/frontend-components.md
+    - Smart Contract Functions: api-reference/smart-contract-functions.md
+  - Troubleshooting:
+    - Common Issues: troubleshooting/common-issues.md
+    - FAQ: troubleshooting/faq.md
+  - Contributing:
+    - Guidelines: contributing/guidelines.md
+    - Code of Conduct: contributing/code-of-conduct.md
+  - Changelog: changelog.md
 
 markdown_extensions:
   - admonition
@@ -131,6 +197,8 @@ markdown_extensions:
 
 plugins:
   - search
+  - minify:
+      minify_html: true
   - git-revision-date-localized:
       type: date
   - redirects:

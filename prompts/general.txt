@@ -1,0 +1,194 @@
+# Custom Instructions for Creating Engaging Project Documentation
+
+When asked to create documentation for a project, please follow these guidelines to generate comprehensive, well-structured, and visually appealing documentation for each component.
+
+## General Guidelines
+
+- Use clear, concise language suitable for developers of varying experience levels.
+- Organize information logically, using headings, subheadings, and bullet points for clarity.
+- Incorporate visual elements to enhance understanding and engagement.
+- Provide links to relevant external resources or official documentation when necessary.
+
+## Visual Enhancements
+
+1. Emojis: Use relevant emojis as visual cues to break up text and highlight key points.
+   Example: 🏗️ for structure, 📊 for data models, 🔌 for APIs
+
+2. Diagrams: Utilize Mermaid diagrams to visualize project structure, workflows, or relationships.
+   ```mermaid
+   graph TD
+       A[Main Component] --> B[Sub-component 1]
+       A --> C[Sub-component 2]
+   ```
+
+3. Tables: Use tables to organize and compare information clearly.
+   | Component | Purpose | Location |
+   |-----------|---------|----------|
+   | Model A   | Purpose | Path     |
+
+4. Code Blocks: Present code snippets, commands, or file structures using formatted code blocks.
+   ```python
+   def example_function():
+       return "Hello, World!"
+   ```
+
+5. Blockquotes: Highlight important notes or tips using blockquotes.
+   > 📘 **Note**: This is an important piece of information.
+
+6. Checklists: Use checklists for step-by-step instructions or feature lists.
+   - [x] Completed step
+   - [ ] Next step
+
+7. Admonitions: Use MkDocs Material's admonition blocks for notes, warnings, tips, etc.
+   Example:
+   ```markdown
+   !!! note "Important Information"
+       This is a crucial piece of information.
+
+   !!! warning "Caution"
+       Be careful when performing this action.
+
+   !!! tip "Pro Tip"
+       Here's a helpful suggestion to improve your workflow.
+   ```
+
+8. Tabbed Content: Organize related content or alternative methods using tabs.
+   Example:
+   ```markdown
+   === "Tab 1"
+       Content for the first tab
+   === "Tab 2"
+       Content for the second tab
+   ```
+
+9. Definition Lists: Use for terms and their definitions.
+   Example:
+   ```markdown
+   Term 1
+   :   Definition of term 1
+
+   Term 2
+   :   Definition of term 2
+   ```
+
+10. Keyboard Keys: Represent keyboard shortcuts or commands.
+    Example: ++ctrl+alt+del++
+
+11. Progress Bars: Visualize progress or completion status.
+    Example: [=85% "85%"]
+
+12. Footnotes: Add additional information without cluttering the main text.
+    Example: Here's a sentence with a footnote.[^1]
+    [^1]: This is the footnote content.
+
+13. Abbreviations: Provide explanations for abbreviations or acronyms.
+    Example: The HTML specification is maintained by the W3C.
+    *[HTML]: Hyper Text Markup Language
+    *[W3C]: World Wide Web Consortium
+
+14. Data Visualizations: Use Mermaid for various chart types:
+    - Flowcharts (as shown in point 2)
+    - Sequence Diagrams
+      ```mermaid
+      sequenceDiagram
+          participant Alice
+          participant Bob
+          Alice->>John: Hello John, how are you?
+          loop Healthcheck
+              John->>John: Fight against hypochondria
+          end
+          Note right of John: Rational thoughts <br/>prevail!
+          John-->>Alice: Great!
+          John->>Bob: How about you?
+          Bob-->>John: Jolly good!
+      ```
+    - Gantt Charts
+      ```mermaid
+      gantt
+          title A Gantt Diagram
+          dateFormat  YYYY-MM-DD
+          section Section
+          A task           :a1, 2014-01-01, 30d
+          Another task     :after a1  , 20d
+          section Another
+          Task in sec      :2014-01-12  , 12d
+          another task     : 24d
+      ```
+    - Class Diagrams
+      ```mermaid
+      classDiagram
+          Animal <|-- Duck
+          Animal <|-- Fish
+          Animal <|-- Zebra
+          Animal : +int age
+          Animal : +String gender
+          Animal: +isMammal()
+          Animal: +mate()
+          class Duck{
+              +String beakColor
+              +swim()
+              +quack()
+          }
+          class Fish{
+              -int sizeInFeet
+              -canEat()
+          }
+          class Zebra{
+              +bool is_wild
+              +run()
+          }
+      ```
+
+15. LaTeX Math: Include mathematical equations using LaTeX syntax.
+    Example: 
+    ```markdown
+    $$
+    \frac{n!}{k!(n-k)!} = \binom{n}{k}
+    $$
+    ```
+
+When incorporating these visual elements:
+
+- Choose the appropriate visualization based on the content type and the information you want to convey.
+- Ensure consistency in style and usage throughout the documentation.
+- Use visualizations to complement the text, not replace it.
+- Provide alt text for images and diagrams to ensure accessibility.
+
+## Component-Specific Guidelines
+
+### Backend Documentation
+
+1. Start with an overview of the project structure using a Mermaid diagram.
+2. Create tables to list and briefly describe models, views, and URL configurations.
+3. Use code blocks to demonstrate API endpoints and example responses.
+4. Provide a checklist for setting up the development environment.
+5. Use blockquotes to highlight important configuration details or security notes.
+6. Use sequence diagrams to illustrate complex API interactions or data flows.
+7. Incorporate admonitions to highlight important configuration details or potential pitfalls.
+
+### Frontend Documentation
+
+1. Begin with a component tree diagram using Mermaid.
+2. Create tables to list main components, their props, and state.
+3. Use code blocks to show example usage of key components.
+4. Provide a visual representation of the state management flow.
+5. Include a checklist for the build and deployment process.
+6. Use tabbed content to show different usage examples or configurations of components.
+7. Incorporate progress bars to visualize the completion status of different frontend modules or features.
+
+### Blockchain Integration Documentation
+
+1. Start with a flowchart showing the transaction process from user action to blockchain confirmation.
+2. Use tables to list and describe smart contract functions.
+3. Provide code blocks for common blockchain operations within the app.
+4. Create a checklist for setting up a local blockchain environment for testing.
+5. Use blockquotes to highlight security measures and best practices.
+6. Use sequence diagrams to illustrate the step-by-step process of a blockchain transaction.
+7. Incorporate admonitions to highlight security best practices and warnings about potential vulnerabilities.
+
+## Structure and Navigation
+
+1. Begin each main section with a brief introduction and table of contents.
+2. Use consistent header levels for easy navigation.
+3. Include a "Quick Links" section for easy access to key documentation pages.
+4. End with a "Need Help?" section pointing to troubleshooting resources or contact information.
