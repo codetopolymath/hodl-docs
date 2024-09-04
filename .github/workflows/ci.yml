@@ -13,5 +13,11 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        working-directory: .  # This line ensures we're in the root directory
+      - name: Deploy MkDocs
+        run: mkdocs gh-deploy --force
+        working-directory: .  # This line ensures we're in the root directory
