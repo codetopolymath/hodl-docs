@@ -1,0 +1,157 @@
+site_name: HODL Project Documentation
+site_description: Comprehensive documentation for the HODL project
+site_author: HODL Team
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - announce.dismiss
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/book-open-page-variant
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Backend:
+    - Overview: backend/overview.md
+    - Project Structure: backend/project-structure.md
+    - Models:
+      - User: backend/models/user.md
+      - Akita: backend/models/akita.md
+      - Incufi: backend/models/incufi.md
+      - Liquidity: backend/models/liquidity.md
+    - APIs:
+      - User: backend/apis/user.md
+      - Akita: backend/apis/akita.md
+      - Incufi: backend/apis/incufi.md
+      - Liquidity: backend/apis/liquidity.md
+    - Management Commands: backend/management-commands.md
+    - Configuration: backend/configuration.md
+  - Frontend:
+    - Overview: frontend/overview.md
+    - Project Structure: frontend/project-structure.md
+    - Pages:
+      - Dashboard: frontend/pages/dashboard.md
+      - My NFTs: frontend/pages/my-nfts.md
+      - Stake: frontend/pages/stake.md
+      - Swap: frontend/pages/swap.md
+      - Team: frontend/pages/team.md
+    - Components:
+      - Header: frontend/components/header.md
+      - Sidebar: frontend/components/sidebar.md
+      - Language Picker: frontend/components/language-picker.md
+    - Core:
+      - Context: frontend/core/context.md
+      - Localization: frontend/core/localization.md
+      - Utils: frontend/core/utils.md
+  - Blockchain:
+    - Overview: blockchain/overview.md
+    - Smart Contracts:
+      - ERC20 Token: blockchain/contracts/erc20-token.md
+      - NFT: blockchain/contracts/nft.md
+      - Liquidity: blockchain/contracts/liquidity.md
+      - Purchase: blockchain/contracts/purchase.md
+      - Swap: blockchain/contracts/swap.md
+    - Transactions: blockchain/transactions.md
+    - Integration: blockchain/integration.md
+  - Development:
+    - Setup: development/setup.md
+    - Backend Development: development/backend.md
+    - Frontend Development: development/frontend.md
+    - Blockchain Development: development/blockchain.md
+  - Deployment:
+    - Backend Deployment: deployment/backend.md
+    - Frontend Deployment: deployment/frontend.md
+    - Smart Contract Deployment: deployment/smart-contracts.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+  - redirects:
+      redirect_maps:
+        'old_page.md': 'new_page.md'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/hodl-project
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/hodlproject
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+copyright: Copyright &copy; 2024 HODL Project Team
