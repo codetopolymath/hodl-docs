@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://codetopolymath.github.io/hodl-docs/</loc>
+         <lastmod>2024-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://codetopolymath.github.io/hodl-docs/backend/overview/</loc>
+         <lastmod>2024-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://codetopolymath.github.io/hodl-docs/blockchain/overview/</loc>
+         <lastmod>2024-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://codetopolymath.github.io/hodl-docs/frontend/overview/</loc>
+         <lastmod>2024-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://codetopolymath.github.io/hodl-docs/frontend/project-structure/</loc>
+         <lastmod>2024-09-04</lastmod>
+    </url>
+    <url>
+         <loc>https://codetopolymath.github.io/hodl-docs/frontend/pages/dashboard/</loc>
+         <lastmod>2024-09-04</lastmod>
+    </url>
+</urlset>

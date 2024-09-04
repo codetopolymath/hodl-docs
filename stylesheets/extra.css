@@ -1,0 +1,142 @@
+/* Custom styles for HODL documentation */
+
+/* Improve overall readability */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Enhance headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 { font-size: 2.5em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.75em; }
+  h4 { font-size: 1.5em; }
+  h5 { font-size: 1.25em; }
+  h6 { font-size: 1em; }
+  
+  /* Improve code readability */
+  code {
+    font-family: 'Roboto Mono', monospace;
+    padding: 2px 4px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+  }
+  
+  pre code {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+  }
+  
+  /* Enhance tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Style blockquotes */
+  blockquote {
+    border-left: 4px solid #4051b5;
+    padding-left: 1em;
+    margin: 1em 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Improve list spacing */
+  ul, ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Add smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Enhance admonitions */
+  .admonition {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admonition-title {
+    font-weight: bold;
+  }
+  
+  /* Improve navigation readability */
+  .md-nav__item .md-nav__link--active {
+    font-weight: bold;
+    color: #4051b5;
+  }
+  
+  /* Enhance search results */
+  .md-search-result__link {
+    padding: 1em;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .md-search-result__link:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Add a subtle hover effect to buttons */
+  .md-button {
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .md-button:hover {
+    transform: translateY(-1px);
+  }
+  
+  /* Improve footer readability */
+  .md-footer-meta {
+    background-color: #1a1a1a;
+  }
+  
+  .md-footer-copyright {
+    color: #bbb;
+  }
+  
+  /* Add a custom class for important information */
+  .important-info {
+    background-color: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    padding: 1em;
+    margin: 1em 0;
+  }
+  
+  /* Responsive font sizes */
+  @media screen and (max-width: 768px) {
+    body { font-size: 16px; }
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.6em; }
+    h4 { font-size: 1.4em; }
+    h5 { font-size: 1.2em; }
+    h6 { font-size: 1em; }
+  }
